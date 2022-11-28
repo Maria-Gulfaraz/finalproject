@@ -15,6 +15,7 @@ const Destination =() =>{
       imgSrc: Img1,
     },
     {
+      
       id: 2,
       imgSrc: Img2,
     },
