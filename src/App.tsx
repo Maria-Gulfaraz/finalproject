@@ -1,6 +1,7 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+
 import Footer from './components/Footer';
 import './components/home';
 import {BrowserRouter, Route, Routes } from "react-router-dom";
@@ -12,14 +13,13 @@ import './components/Contact';
 import Contact from './components/Contact';
 import Slider from '../src/components/home';
 import  About from './components/aboutUs'
-import Destination from './components/destination';
-
+import Destination from '../src/components/destination';
 import Header from '../src/components/Header';
+
 function App() {
   return (
     <div className="App">
      <ResponsiveAppBar/> 
- 
    <Routes>
     <Route  path='/' element={ <Slider/>}/>
     <Route  path='/contact' element={ <Contact/>}/>
