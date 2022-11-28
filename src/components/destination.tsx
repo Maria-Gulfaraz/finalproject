@@ -7,7 +7,6 @@ import Img3 from './img/img3.jpg';
 import Img4 from './img/img4.jpg';
 import Img5 from './img/img5.jpg';
 
-
 const Destination =() =>{
   let data=[
     {
@@ -15,7 +14,6 @@ const Destination =() =>{
       imgSrc: Img1,
     },
     {
-      
       id: 2,
       imgSrc: Img2,
     },
