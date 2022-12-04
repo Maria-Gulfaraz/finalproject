@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+//import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+//import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from "react-router-dom";
@@ -37,8 +37,8 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{color:'#A5CC82'}}>
-      <Container maxWidth="xl" sx={{color:'#A5CC82'}}>
+    <AppBar position="static" style={{background:'#A5CC82'}}>
+      <Container maxWidth="xl" sx={{color:'green'}}>
         <Toolbar disableGutters >
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -52,7 +52,7 @@ const ResponsiveAppBar = () => {
               fontFamily: 'sans-serif',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: '#A5CC82',
+              color: 'green',
               textDecoration: 'none',
             }}
           >

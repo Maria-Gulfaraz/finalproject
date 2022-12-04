@@ -18,7 +18,7 @@
 }
 @media (max-width: 991px){
     .destination{
-        -webkit-column-count: 3;
+        -webkit-column-count:3;
         -moz-column-count: 3;
       -column-count: 3;
     
