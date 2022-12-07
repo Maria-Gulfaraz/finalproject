@@ -6,6 +6,12 @@ import img2 from './../img/img2.jpg';
 import img3 from './../img/img3.jpg';
 import img4 from './../img/img4.jpg';
 import img5 from './../img/img5.jpg';
+import img6 from './../img/img6.jpg';
+import img7 from './../img/img7.jpg';
+import img8 from './../img/img8.jpg';
+import img9 from './../img/img9.jpg';
+import img10 from './../img/img10.jpg';
+
 
 const Destination =() =>{
   let data=[
@@ -28,6 +34,26 @@ const Destination =() =>{
     {
       id: 5,
       imgSrc: img5,
+    },
+    {
+      id: 6,
+      imgSrc: img6,
+    },
+    {
+      id: 7,
+      imgSrc: img7,
+    },
+    {
+      id: 8,
+      imgSrc: img8,
+    },
+    {
+      id: 9,
+      imgSrc: img9,
+    },
+    {
+      id: 10,
+      imgSrc: img10,
     },
   ]
   const [model,setmodel]= useState(false);

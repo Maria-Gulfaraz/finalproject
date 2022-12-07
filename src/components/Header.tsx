@@ -37,7 +37,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{background:'#A5CC82'}}>
+    <AppBar position="sticky" style={{background:'greenyellow' ,fontFamily: 'serif' }}>
       <Container maxWidth="xl" sx={{color:'green'}}>
         <Toolbar disableGutters >
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -59,7 +59,7 @@ const ResponsiveAppBar = () => {
             LOGO
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1,marginLeft:'100px', display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -114,7 +114,7 @@ const ResponsiveAppBar = () => {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1,marginLeft:'90px', display: { xs: 'none', md: 'flex' } }}>
           <Link to="/"><Button
               key={"home"}
               onClick={handleCloseNavMenu}
