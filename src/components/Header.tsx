@@ -40,7 +40,15 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky" style={{background:'greenyellow' ,fontFamily: 'serif' }}>
       <Container maxWidth="xl" sx={{color:'green'}}>
         <Toolbar disableGutters >
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <Box component="a" href="https://mui.com/" sx={{m:2}}>
+        <img
+          src={require('../components/logo/logo.png')}
+          alt="Instagram"
+          style={{height:'50px'}}
+          />
+        </Box>
+          
+        
           <Typography
             variant="h6"
             noWrap
@@ -56,7 +64,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
 
           <Box sx={{ flexGrow: 1,marginLeft:'100px', display: { xs: 'flex', md: 'none' } }}>
@@ -147,7 +155,7 @@ const ResponsiveAppBar = () => {
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-     About US
+     Booking
             </Button>
           </Link>
           <Link to="/contact"><Button
@@ -156,6 +164,13 @@ const ResponsiveAppBar = () => {
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
                Contact Us
+               </Button></Link>
+               <Link to="/login"><Button
+              key={"contact"}
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+            >
+               Registeration
                </Button></Link>
 
             {/* {pages.map((page) => (

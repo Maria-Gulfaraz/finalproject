@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Footer.css"
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import CallIcon from '@mui/icons-material/Call';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
@@ -21,7 +24,7 @@ export default function App() {
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4' style={{fontFamily: 'serif'}}>Quick Links</h6>
+              <h6 className='text-uppercase fw-bold mb-4' style={{ fontFamily: 'serif'}}>Quick Links</h6>
               <p>
                 <a href='/destination' className='text-reset' style={{fontFamily: 'serif'}}>
                 Destination
@@ -48,18 +51,20 @@ export default function App() {
             <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
-             <MDBIcon color='secondary' icon='home' className='me-2' style={{fontFamily: 'serif'}} />
-             Islambad, Blue Area Pakistan
+             {/* <MDBIcon color='secondary' icon='camera-retro' className='me-2' style={{fontFamily: 'serif'}} /> */}
+             icon={< LocationOnIcon  />}Islambad, Blue Area Pakistan
               </p>
               <p>
-            <MDBIcon color='secondary' icon='envelope' className='me-3' style={{fontFamily: 'serif'}} />
-            mariabib53@gmail.com
+            {/* <MDBIcon color='secondary' icon='envelope' className='me-3' style={{fontFamily: 'serif'}} /> */}
+            icon={< MailOutlineIcon/>}  mariabib53@gmail.com
               </p>
               <p>
-              <MDBIcon color='secondary' icon='phone' className='me-3' style={{fontFamily: 'serif'}} /> + 01 234 567 88
+              icon={< CallIcon/>} + 01 234 567 89 
+              {/* <MDBIcon color='secondary' icon='phone' className='me-3' style={{fontFamily: 'serif'}} /> + 01 234 567 88 */}
               </p>
               <p>
-                <MDBIcon  icon='print' className='me-3' style={{fontFamily: 'serif'}} /> + 01 234 567 89
+               {/* <MDBIcon  icon='print' className='me-3' style={{fontFamily: 'serif'}} /> + 01 234 567 89 */}
+               icon={< CallIcon/>} + 01 234 567 89 
               </p>
             </MDBCol>
           </MDBRow>

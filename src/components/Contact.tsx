@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import axios from 'axios'
 const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('Send')
   const onSubmit = (e:any) => {
@@ -12,12 +13,15 @@ const Contact = () => {
       message: message.value,
     }
     console.log(conFom)
+    axios.post("http://localhost:5000/api/post",conFom)
+   // axios.get("http://localhost:5000/api/post")
+
   }
   return (
     <>
     <div className="container mt-5">
       <div className='contactForm'>
-      <form >
+      <form  onSubmit={onSubmit}>
       <h2 className="mb-3"> <b>Contact Us</b></h2>
         <div className="mb-3">
           <input className="form-control inputbc" type="text" placeholder='Your Name' id="name" required />
@@ -28,9 +32,11 @@ const Contact = () => {
         <div className="mb-3">
           <textarea className="form-control inputbc" placeholder='Message' id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit">
+        <button className="btn btn-danger" type="submit" >
         Send
         </button>
+      
+
       </form>
     </div>
     </div>
